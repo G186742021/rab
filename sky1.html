@@ -12,7 +12,11 @@
           <a-text value="300m" width="11" position="-2.5 2.5 -3" rotation="0 15 0" color="#FFF"
                 font="https://cdn.aframe.io/fonts/mozillavr.fnt"></a-text>
           <a-light type="ambient" color="#ffffff"></a-light>
-
+ <!-- 100mの円を作成 -->
+        <a-entity>
+            <!-- 円形の枠線 -->
+            <a-circle position="0 0 0" radius="50" color="red" rotation="-90 0 0" material="shader: line; side: double; linewidth: 5"></a-circle>
+        </a-entity>
     </a-scene>
 </body>
 </html>
