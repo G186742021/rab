@@ -11,7 +11,19 @@
         <a-sky src="./puydesancy.jpg"></a-sky>
           <a-text value="300m" width="11" position="-2.5 2.5 -3" rotation="0 15 0" color="#FFF"
                 font="https://cdn.aframe.io/fonts/mozillavr.fnt"></a-text>
-         <a-circle position="0 0 0" radius="50" color="red" material="shader: line"></a-circle>
+          <a-light type="ambient" color="#ffffff"></a-light>
+
+        <!-- 100mの円を作成 -->
+        <a-entity>
+            <!-- 円形の枠線 -->
+            <a-circle position="0 0 0" radius="50" color="red" rotation="-90 0 0" material="shader: line; side: double; linewidth: 5"></a-circle>
+        </a-entity>
+
+        <!-- 地面 -->
+        <a-plane rotation="-90 0 0" width="200" height="200" color="#7BC8A4"></a-plane>
+
+        <!-- カメラ -->
+        <a-camera position="0 50 150" rotation="-30 0 0"></a-camera>
 
 
     </a-scene>
