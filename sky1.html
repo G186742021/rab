@@ -12,17 +12,14 @@
           <a-text value="300m" width="11" position="-2.5 2.5 -3" rotation="0 15 0" color="#FFF"
                 font="https://cdn.aframe.io/fonts/mozillavr.fnt"></a-text>
           <a-light type="ambient" color="#ffffff"></a-light>
-        <!-- 環境光 -->
+       <!-- 環境光 -->
         <a-light type="ambient" color="#ffffff"></a-light>
 
-        <!-- 半径50mの円 (100m直径) -->
-        <a-circle position="0 0 0" radius="50" color="red" rotation="-90 0 0"></a-circle>
-
-        <!-- 地面 -->
-        <a-plane position="0 0 0" rotation="-90 0 0" width="200" height="200" color="#7BC8A4"></a-plane>
+        <!-- 半径100m地点を線で囲む円 (100m) -->
+        <a-ring position="0 0 0" radius-inner="99.5" radius-outer="100" color="red" rotation="-90 0 0"></a-ring>
 
         <!-- カメラ -->
-        <a-camera position="0 50 150" rotation="-30 0 0"></a-camera>
+        <a-camera position="0 200 200" rotation="-45 0 0"></a-camera>
     </a-scene>
 </body>
 </html>
