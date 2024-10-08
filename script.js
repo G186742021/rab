@@ -57,7 +57,26 @@ function initMap() {
                  VisualMarker(true);}
         });
     }
-    
+
+ // インフォウィンドウにボタンを追加する関数
+    function attachInfoWindow(marker, pageUrl, description) {
+      const infoWindow = new google.maps.InfoWindow({
+        content: `
+          <div>
+            <h3>${marker.getTitle()}</h3>
+            <button onclick="window.location.href='${pageUrl}'">360度ビューを見る</button>
+            <br><br>
+            <button onclick="alert('${description}')">場所の説明を見る</button>
+          </div>
+        `
+      });
+
+      // マーカーをクリックしたときにインフォウィンドウを表示
+      marker.addListener('click', function() {
+        infoWindow.open(map, marker);
+      });
+    }
+
     // マーカーの表示/非表示を切り替える関数
     function VisualMarker(visible) {
         for (let i = 0; i < markers.length; i++) {
