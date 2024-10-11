@@ -11,57 +11,6 @@ function initMap() {
         zoom: 18
     });
 
-     <style>
-      /* インフォウィンドウのスタイル */
-      .info-window {
-        font-family: Arial, sans-serif;
-        font-size: 14px;
-        color: #333;
-      }
-
-      /* タイトルのスタイル */
-      .info-window h3 {
-        font-size: 18px;
-        margin: 0;
-        color: #2c3e50;
-      }
-
-      /* ボタンのスタイル */
-      .info-window button {
-        background-color: #3498db; /* ボタンの背景色 */
-        color: white;              /* ボタンのテキスト色 */
-        padding: 10px 15px;        /* ボタンのパディング */
-        border: none;              /* ボーダーをなくす */
-        border-radius: 5px;        /* 角を丸くする */
-        cursor: pointer;           /* カーソルをポインターに */
-        font-size: 14px;
-        transition: background-color 0.3s ease; /* ホバー時のアニメーション */
-        margin: 5px 0;             /* ボタン間のマージン */
-        width: 100%;
-      }
-
-      /* ボタンのホバー時のスタイル */
-      .info-window button:hover {
-        background-color: #2980b9; /* ホバー時の色 */
-      }
-
-      /* ボタン間の隙間を設定 */
-      .info-window button + button {
-        margin-top: 10px;
-      }
-
-      /* インフォウィンドウの全体的なスタイル */
-      .info-window {
-        max-width: 250px;   /* 最大幅を設定 */
-        padding: 10px;      /* 内側のパディングを設定 */
-      }
-
-      /* 地図全体のスタイル */
-      #map {
-        height: 500px;
-        width: 100%;
-      }
-    </style>
 
     // マーカーの座標とマーカーの全天球画像
     const markerData = [
