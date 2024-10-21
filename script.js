@@ -13,7 +13,7 @@ function initMap() {
     // マーカーの座標とマーカーの全天球画像
     const markerData = [
         { position: { lat: 35.62996668120076, lng: 139.2799270710072 }, page: 'sky1.html' },
-        { position: { lat: 35.62977993057464, lng: 139.28073285916975 }, page: 'sky/sky2.html' },
+        { position: { lat: 35.62977993057464, lng: 139.28073285916975 }, page: 'sky2.html' },
         { position: { lat: 35.629082899737014, lng: 139.28052898505635 }, page: 'sky/sky3.html' },
         { position: { lat: 35.628154392599505, lng: 139.28016654219047 }, page: 'sky/sky4.html' },
         { position: { lat: 35.62738632756379, lng: 139.27987852955098 }, page: 'sky/sky5.html' },
