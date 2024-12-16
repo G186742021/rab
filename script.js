@@ -20,7 +20,15 @@ function initMap() {
                 'sky1_120m.html'
             ]
         },
-        { position: { lat: 35.425122, lng: 138.855432 }, page: 'sky2.html'} ];
+        { position: { lat: 35.425122, lng: 138.855432 }, page:  [
+                'sky3_20m.html',
+                'sky3_30m.html',
+                'sky3_50m.html',
+                'sky3_80m.html',
+                'sky3_120m.html'
+             ]
+     }
+    ];
 
         // マーカーを設置し、インフォウィンドウを作成
         for (let i = 0; i < markerData.length; i++) {
