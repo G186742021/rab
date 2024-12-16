@@ -51,10 +51,12 @@ function initMap() {
         const infoWindow = new google.maps.InfoWindow({
           content: `
             <div>
-              <h3>${marker.getTitle()}</h3>
-              <button onclick="window.open('${pageUrl}', '_blank')">360度ビューを見る</button>
-              <br><br>
-              <button onclick="alert('${description}')">場所の説明を見る</button>
+             <h3>${marker.getTitle()}</h3>
+                <button onclick="window.open('${pages[0]}', '_blank')">20mのビューを見る</button><br>
+                <button onclick="window.open('${pages[1]}', '_blank')">30mのビューを見る</button><br>
+                <button onclick="window.open('${pages[2]}', '_blank')">50mのビューを見る</button><br>
+                <button onclick="window.open('${pages[3]}', '_blank')">80mのビューを見る</button><br>
+                <button onclick="window.open('${pages[4]}', '_blank')">120mのビューを見る</button>
             </div>
           `
         });
