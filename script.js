@@ -47,7 +47,7 @@ function initMap() {
       }
 
       // インフォウィンドウにボタンを追加する関数
-      function attachInfoWindow(marker, pageUrl, description) {
+      function attachInfoWindow(marker, page) {
         const infoWindow = new google.maps.InfoWindow({
           content: `
             <div>
