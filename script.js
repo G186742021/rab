@@ -8,12 +8,12 @@ function initMap() {
     // Google Mapを生成
     const map = new google.maps.Map(document.getElementById('map'), {
         center: center,
-        zoom: 18
+        zoom: 25
     });
     // マーカーの座標とマーカーの全天球画像
     const markerData = [
-        { position: { lat: 35.62996668120076, lng: 139.2799270710072 }, page: 'sky1.html' },
-        { position: { lat: 35.62977993057464, lng: 139.28073285916975 }, page: 'sky2.html'} ];
+        { position: { lat: 35.428597, lng: 138.858912 }, page: 'sky1.html' },
+        { position: { lat: 35.425122, lng: 138.855432 }, page: 'sky2.html'} ];
 
         // マーカーを設置し、インフォウィンドウを作成
         for (let i = 0; i < markerData.length; i++) {
