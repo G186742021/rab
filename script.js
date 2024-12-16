@@ -30,10 +30,10 @@ function initMap() {
             title: 'Point ' + (i + 1)
           });
 
-          // インフォウィンドウにボタンを追加
-          attachInfoWindow(marker, markerData[i].page, markerData[i].description);
+          // インフォウィンドウに5つのボタンを追加
+        attachInfoWindow(marker, markerData[i].page);
 
-          markers.push(marker);
+        markers.push(marker);
         }
 
         // ストリートビューのON/OFFでマーカーの表示を切り替え
