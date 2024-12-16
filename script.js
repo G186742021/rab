@@ -8,7 +8,7 @@ function initMap() {
     // Google Mapを生成
     const map = new google.maps.Map(document.getElementById('map'), {
         center: center,
-        zoom: 16
+        zoom: 19
     });
     // マーカーの座標とマーカーの全天球画像
     const markerData = [
