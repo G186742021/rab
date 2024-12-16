@@ -52,11 +52,11 @@ function initMap() {
           content: `
             <div>
              <h3>${marker.getTitle()}</h3>
-                <button onclick="window.open('${pages[0]}', '_blank')">20mのビューを見る</button><br>
-                <button onclick="window.open('${pages[1]}', '_blank')">30mのビューを見る</button><br>
-                <button onclick="window.open('${pages[2]}', '_blank')">50mのビューを見る</button><br>
-                <button onclick="window.open('${pages[3]}', '_blank')">80mのビューを見る</button><br>
-                <button onclick="window.open('${pages[4]}', '_blank')">120mのビューを見る</button>
+                <button onclick="window.open('${page[0]}', '_blank')">20mのビューを見る</button><br>
+                <button onclick="window.open('${page[1]}', '_blank')">30mのビューを見る</button><br>
+                <button onclick="window.open('${page[2]}', '_blank')">50mのビューを見る</button><br>
+                <button onclick="window.open('${page[3]}', '_blank')">80mのビューを見る</button><br>
+                <button onclick="window.open('${page[4]}', '_blank')">120mのビューを見る</button>
             </div>
           `
         });
