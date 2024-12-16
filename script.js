@@ -3,7 +3,7 @@ let markers = [];
 
 function initMap() {
     // 拓殖大学八王子キャンパス
-    const center = { lat: 35.423305, lng: 138.859353 };
+    const center = { lat: 35.418190, lng: 138.871845 };
 
     // Google Mapを生成
     const map = new google.maps.Map(document.getElementById('map'), {
