@@ -8,7 +8,7 @@ function initMap() {
     // Google Mapを生成
     const map = new google.maps.Map(document.getElementById('map'), {
         center: center,
-        zoom: 15
+        zoom: 16
     });
     // マーカーの座標とマーカーの全天球画像
     const markerData = [
@@ -26,6 +26,14 @@ function initMap() {
                 'sky3_50m.html',
                 'sky3_80m.html',
                 'sky3_120m.html'
+             ]
+     },
+         { position: { lat: 35.422429, lng: 138.890768 }, page:  [
+                'sky7_20m.html',
+                'sky7_30m.html',
+                'sky7_50m.html',
+                'sky7_80m.html',
+                'sky7_120m.html'
              ]
      }
     ];
