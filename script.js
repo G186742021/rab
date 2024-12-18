@@ -89,6 +89,36 @@ function initMap() {
           markers[i].setVisible(visible);
         }
       }
+//モーション許可無くす
+if (typeof DeviceMotionEvent !== 'undefined' && typeof DeviceMotionEvent.requestPermission === 'function') {
+    document.addEventListener('DOMContentLoaded', () => {
+        const button = document.createElement('button');
+        button.innerText = 'Enable Motion Sensors';
+        button.style.cssText = 'position: absolute; top: 20px; left: 20px; z-index: 1000;';
+        document.body.appendChild(button);
+
+        button.addEventListener('click', () => {
+            DeviceMotionEvent.requestPermission()
+                .then(state => {
+                    if (state === 'granted') {
+                        console.log('Motion sensor access granted.');
+                        startMotionSensor(); // モーションセンサーの処理を開始
+                    } else {
+                        console.warn('Motion sensor access denied.');
+                    }
+                    document.body.removeChild(button);
+                })
+                .catch(console.error);
+        });
+    });
+}
+
+function startMotionSensor() {
+    window.addEventListener('deviceorientation', event => {
+        console.log('Alpha:', event.alpha, 'Beta:', event.beta, 'Gamma:', event.gamma);
+    });
+}
+
 
       // ページが読み込まれたら地図を初期化
       window.onload = initMap;
