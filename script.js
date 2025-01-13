@@ -8,8 +8,107 @@ function initMap() {
     // Google Mapを生成
     const map = new google.maps.Map(document.getElementById('map'), {
         center: center,
-        zoom: 13
-    });
+        zoom: 13,
+        styles: [
+                     {
+                      "featureType": "all",
+                      "elementType": "geometry",
+                      "stylers": [
+                          { "color": "#e0efef" }
+                      ]
+                  },
+                  {
+                      "featureType": "all",
+                      "elementType": "labels.text.fill",
+                      "stylers": [
+                          { "color": "#000000" },
+                          { "lightness": 20 }
+                      ]
+                  },
+                  {
+                      "featureType": "all",
+                      "elementType": "labels.text.stroke",
+                      "stylers": [
+                          { "color": "#ffffff" },
+                          { "lightness": -30 },
+                          { "weight": 2 }
+                      ]
+                  },
+                  {
+                      "featureType": "landscape",
+                      "elementType": "geometry",
+                      "stylers": [
+                          { "color": "#e0efef" },
+                          { "lightness": 20 }
+                      ]
+                  },
+                  {
+                      "featureType": "poi",
+                      "elementType": "geometry",
+                      "stylers": [
+                          { "color": "#c5e3bf" },
+                          { "lightness": 21 }
+                      ]
+                  },
+                  {
+                      "featureType": "poi.park",
+                      "elementType": "geometry",
+                      "stylers": [
+                          { "color": "#bde6ab" },
+                          { "lightness": 20 }
+                      ]
+                  },
+                  {
+                      "featureType": "road",
+                      "elementType": "geometry",
+                      "stylers": [
+                          { "color": "#ffffff" },
+                          { "lightness": 20 }
+                      ]
+                  },
+                  {
+                      "featureType": "road.highway",
+                      "elementType": "geometry",
+                      "stylers": [
+                          { "color": "#f8c967" }
+                      ]
+                  },
+                  {
+                      "featureType": "water",
+                      "elementType": "geometry",
+                      "stylers": [
+                          { "color": "#a4d3e3" }
+                      ]
+                  },
+                   {
+                       "featureType": "poi.government" ,
+                       "stylers": [
+                           {"visibility": "off"}
+                           ]
+                   },
+                   {
+                       "featureType": "poi.medical" ,
+                       "stylers": [
+                           {"visibility": "off"}
+                           ]
+                   },
+                   {
+                       "featureType": "poi.place_of_worship" ,
+                       "stylers": [
+                           {"visibility": "off"}
+                           ]
+                   },
+                   {
+                       "featureType": "poi.school" ,
+                       "stylers": [
+                           {"visibility": "off"}
+                           ]
+                   }
+                   ]
+                });
+
+
+    
     // マーカーの座標とマーカーの全天球画像
     const markerData = [
         { position: { lat: 35.428597, lng: 138.858912 }, page: [
