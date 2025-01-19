@@ -195,7 +195,7 @@ function initMap() {
           content: `
             <div>
              <h3>${marker.getTitle()}</h3>
-                <button style="width: 200px; height: 50px; margin-bottom: 5px;" onclick="window.open('${page[3]}', '_blank')">80mのビューを見る</button><br>
+                <button style="width: 200px; height: 50px; margin-bottom: 5px;" onclick="window.open('${page[0]}', '_blank')">80mのビューを見る</button><br>
             </div>
           `
         });
