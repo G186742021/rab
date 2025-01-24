@@ -124,7 +124,7 @@ function initMap() {
              ]
      },
          { position: { lat: 35.427856, lng: 138.851409 }, page:  [
-                'sky1_50m.html'',
+                'sky1_50m.html',
                 '',
                 '',
                 '',
@@ -132,7 +132,7 @@ function initMap() {
              ]
     },
               { position: { lat: 35.408981, lng: 138.877194 }, page:  [
-                'sky1_120m.html'',
+                'sky1_120m.html',
                 '',
                 '',
                 '',
