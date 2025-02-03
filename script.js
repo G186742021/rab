@@ -116,43 +116,27 @@ function initMap() {
             ]
         },
         { position: { lat: 35.422331, lng: 138.860401 }, page:  [
-                'sky1_30m.html'
+                'sky2_80m.html'
              ]
      },
          { position: { lat: 35.422429, lng: 138.890768 }, page:  [
-                'sky1_20m.html',
+                'sky3_80m.html'
              ]
      },
          { position: { lat: 35.427856, lng: 138.851409 }, page:  [
-                'sky1_50m.html',
-                '',
-                '',
-                '',
-                ''
+                'sky4_80m.html'
              ]
     },
               { position: { lat: 35.408981, lng: 138.877194 }, page:  [
-                'sky1_120m.html',
-                '',
-                '',
-                '',
-                ''
+                'sky5_80m.html'
              ]
     },
          { position: { lat: 35.412773, lng: 138.889561 }, page:  [
-                '',
-                '',
-                '',
-                '',
-                ''
+                'sky6_80m.html'
              ]
          },
          { position: { lat: 35.422736, lng: 138.881805 }, page:  [
-                '',
-                '',
-                '',
-                '',
-                ''
+                'sky7_80m.html'
              ]
          }
     ];
