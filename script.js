@@ -2,7 +2,7 @@ let map;
 let markers = [];
 
 function initMap() {
-    // 拓殖大学八王子キャンパス
+    // 山梨県山中湖
     const center = { lat: 35.418190, lng: 138.871845 };
 
     // Google Mapを生成
